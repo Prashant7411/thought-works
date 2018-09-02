@@ -1,0 +1,14 @@
+This assignment is build using Reactjs, Redux. And the project is setup using 'create-react-app' command and using React CLI
+
+After downloading the files
+	1. CD into the folder using terminal
+	2. Then run 'npm install' command to install all packages
+	3. Then run 'npm start' (make sure your CD into the project folder)
+
+
+Major Npm packages used in this project:
+	1. redux
+	2. react-redux
+	3. redux-thunk
+	4. redux-logger(debugging)
+	

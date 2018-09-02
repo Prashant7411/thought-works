@@ -1,0 +1,178 @@
+* ,HTML ,Body{
+  padding: 0;
+  margin: 0;
+}
+
+.loading{
+  position: absolute;
+  top:40%;
+  left:45%;
+}
+
+.movie__card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 36rem;
+  margin: 0.5rem;
+}
+.movie__card__side {
+  height: 36rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+}
+.movie__card__side--front {
+  background-color: #fff;
+}
+.movie__card__side--back {
+  transform: rotateY(180deg);
+}
+.movie__card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffba90 0, #ff7730);
+}
+.movie__card:hover .movie__card__side--front {
+  transform: rotateY(180deg);
+}
+.movie__card:hover .movie__card__side--back {
+  transform: rotateY(0);
+}
+.movie__card__picture {
+  background-size: cover;
+  height: 15rem;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.movie__card__picture--1 {
+  background-image: linear-gradient(to right bottom, #ffba90 0, #ff7730), url(../images/danny-howe-762860-unsplash.jpg);
+}
+
+.movie__card__heading {
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 11rem;
+  right: 0;
+  width: 75%;
+  text-align: right;
+}
+.movie__card__heading-span {
+  padding: 1rem 1.5rem;
+}
+.movie__card__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, .85), rgba(255, 119, 48, .85));
+}
+.movie__card__details {
+  padding: 1rem;
+}
+.movie__card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.movie__card__details ul li {
+  text-align: center;
+  font-size: 12px;
+  padding: 1rem;
+  color:#000;
+  word-break: break-all;
+}
+.movie__card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.movie__card__details--back {
+  padding: 1rem;
+}
+.movie__card__details--back ul {
+  list-style: none;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.movie__card__details--back ul li {
+  text-align: center;
+  font-size: 15px;
+  padding: 1rem;
+  color:#fff;
+  word-break: break-all;
+}
+.movie__card__details--back ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+.top__movie__card__details {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15);
+  border:1px solid #eee;
+  margin: 0.5rem;
+}
+.top__movie__card__details ul {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.top__movie__card__details ul li {
+  text-align: center;
+  font-size: 15px;
+  padding: 1rem;
+  color:#000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+}
+.top__movie__card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.top__movie__card__details__heading{
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+  color:#fff
+}
+
+.top__movie__card__details__heading__box{
+  background-color: #494949;
+  
+}
+
+.no__data__found__img__container{
+  position: absolute;
+  top: 90%;
+  left: 39%;
+}
+
+.error__heading{
+  text-transform: uppercase;
+  font-weight: 900;
+  position:absolute;
+  top: 85%;
+  left: 30%;
+  font-size: 2rem;
+
+}
+
+li .IMDB__Link{
+  display: inline-block;
+  padding:0.2rem 0.4rem;
+  text-decoration: none;
+  color:rgba(255, 119, 48, .85);
+  background-color: #fff;
+  border-radius: 10%;
+}

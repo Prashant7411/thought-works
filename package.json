@@ -1,0 +1,27 @@
+{
+  "name": "thought_works",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-materialize": "^2.4.5",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.5",
+    "react-select": "^2.0.0",
+    "react-slick": "^0.23.1",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
